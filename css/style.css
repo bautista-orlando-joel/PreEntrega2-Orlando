@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+}
+.montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+
+.roboto-condensed-<uniquifier> {
+    font-family: "Roboto Condensed", sans-serif;
+
+6B8E23 verde oliva
+F5F5DC beige
+000000 negro
+FFFFFF blanco
+F2F2F2 gris
+}
+*/
+
+/* LOS COMENTARIOS SON MAS O MENOS (mas menos) UNA GUIA */
+
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #f2f2f2;
+}
+
+.main-padding {
+    padding: 0rem 10rem;
+}
+
+.padding-top {
+    padding-top: 13.4375rem;
+}
+
+
+.padding-bot-index {
+    padding-bottom: 5.625rem;
+}
+
+.padding-bot-laempresa {
+    padding-bottom: 4.625rem;
+}
+
+.padding-bot-nuestraexcelencia {
+    padding-bottom: 6.875rem;
+}
+
+.padding-bot-productos {
+    padding-bottom: 8.75rem;
+}
+
+.padding-bot-contactos {
+    padding-bottom: 6.0625rem;
+}
+
+/* header */
+
+header {
+    background-color: #F5F5DC;
+    width: 100%;
+    border-bottom: .0625rem solid #000000;
+}
+
+header div img {
+    background-color: #ffffff;
+    width: 17.8125rem;
+    height: 16.125rem;
+    overflow: hidden;
+    object-fit: cover;
+    padding: .3125rem;
+}
+
+header .contact-nav {
+    background-color: #000000;
+    width: 100%;
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.main-nav ul{
+    width: fit-content;
+    padding: 0;
+
+}
+
+.main-nav ul li {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-nav ul li a {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+.border-right-mainnav {
+    border-right: .125rem solid black;
+}
+
+.header-shadow {
+    box-shadow: 0 .125rem .625rem black ;
+}
+
+.logo-shadow {
+    box-shadow: 0 .125rem .625rem black ;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1.25rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.contact-nav ul {
+    list-style: circle;
+    margin: 0rem;
+    padding-right: 15rem;
+}
+
+.contact-nav ul li {
+    padding: .9375rem 0;
+}
+
+.contact-nav ul li a {
+    color: #ffffff;
+}
+
+
+.products-nav ul li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000000;
+    font-style: italic;
+}
+
+.products-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000000;
+    font-style: italic;
+}
+
+.header-logo {
+    position: absolute;
+    top: 0px;
+    left: 12.5rem;
+}
+
+/* inicio */
+
+.homepage-banner {
+    width: 100%;
+    height: 31.375rem;
+    border-bottom: .0625rem solid #000000;
+    border-top: .0625rem solid #000000;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-entire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 21.5625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    text-align: center
+}
+
+.card img{
+    width: 100%;
+    height: 17.8125rem;
+    object-fit: cover;
+}
+
+.card button {
+    align-self: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+.circle-image {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.product-homepage-img-size {
+    width: 17.95rem;
+    height: 17.95rem;
+}
+
+.homepage-product-text p {
+    text-align: left;
+}
+
+.vermas-button {
+    background-color: #f2f2f2;
+    border: .0625rem solid #6B8E23;
+    padding: .625rem .9063rem;
+    margin-top: 1.125rem;
+}
+
+.vermas-button a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    height: 1.3125rem;
+}
+
+.homepage-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.verproductos-button {
+    background-color: #f2f2f2;
+    border: .0625rem solid #6B8E23;
+    padding: .625rem .8125rem;
+}
+
+.verproductos-button a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    height: 1.3125rem;
+}
+
+.medium-division {
+    width: 7.5rem;
+    margin-top: 1.0625rem;
+    margin-bottom: .9375rem;
+}
+
+.grid-products-inicio {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 6.25rem .625rem 6.25rem 6.25rem ;
+}
+
+.grid-products-inicio img {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    align-self: center;
+    margin-left: .625rem;
+}
+
+.grid-products-inicio h2 {
+    grid-column: 2/3;
+    text-align: left;
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.grid-products-inicio hr {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 25%;
+    border: .0625rem solid #6B8E23;
+    align-self: center;
+    margin-left: 0px;
+}
+
+.grid-products-inicio button {
+    grid-column: 2;
+    grid-row: 4/5;
+    align-self: center;
+    justify-self: left;
+    padding: .625rem .8125rem;
+    margin-bottom: .9375rem ;
+}
+
+.grid-products-inicio p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    text-align: justify;
+}
+
+/* la empresa */
+
+.values-img-size {
+    height: 9.375rem;
+    width: 9.375rem;
+}
+
+.margin-bottom-titles {
+    margin-bottom: 1.5rem;
+}
+
+.margin-bottom-valores {
+    margin-bottom: 2.625rem;
+}
+
+.margin-intersection {
+    margin: 4rem 10rem 4.375rem 10rem ;
+}
+
+.shorter-division {
+    width: 3.75rem;
+
+}
+
+.provisional-size {
+    width: 31.375rem;
+    height: 37.25rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: .0313rem solid #000000;
+}
+
+.provisional-margin-1 {
+    margin-top: 3.25rem;
+}
+
+.provisional-margin-2 {
+    margin-bottom: 3.25rem;
+}
+
+.margin-bottom-laempresa {
+    margin-bottom: 2.5rem;
+}
+
+/* nuestra excelencia */
+
+.provisional-size2 {
+    width: 31.875rem;
+    height: 18.125rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: .0313rem solid #000000;
+}
+
+.provisional-size3 {
+    width: 29.5625rem;
+    height: 27.5625rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: .0313rem solid #000000;
+}
+
+.margin-bottom-nuestraexcelencia {
+    margin-bottom: 3.875rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-nuestraexcelencia-divisions {
+    margin-top: 1.125rem;
+    margin-bottom: 2.375rem;
+}
+
+.division-size1 {
+    width: 100%;
+}
+
+.division-size2 {
+    width: 80%;
+}
+
+.division-size3 {
+    width: 60%;
+}
+
+.division-size4 {
+    width: 40%;
+}
+
+/* productos */
+
+.text-border {
+    border: .0625rem solid #6B8E23;
+    padding: .375rem .375rem;
+    display: inline;
+}
+
+.margin-top-h3 {
+    margin-top: 7rem;
+}
+
+
+.green-division {
+    border-top: .0625rem solid #6B8E23;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-nav ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.products-nav ul li {
+    padding: 1.25rem 0;
+}
+
+.products-section hr {
+    margin-top: 0rem;
+    margin-bottom: 4.9375rem;
+}
+
+.products-section .margin-products-division {
+    margin-top: 1.625rem;
+    margin-bottom: 7rem;
+}
+
+#productos {
+    margin-top: 1.625rem;
+}
+
+.products-img-size {
+    width: 16.125rem;
+    height: 16.125rem;
+}
+
+
+/* contactos */
+
+.map-iframe {
+    width: 100%;
+    height: 31.375rem;
+    border-bottom: .0625rem solid #000000;
+}
+
+.map-iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-section {
+    padding-top: 6.0625rem;
+}
+
+.contact-title {
+    margin-bottom: 3.25rem;
+}
+
+.contact-title h1 {
+    margin-bottom: 1.2813rem;
+}
+
+.contact-subtitle {
+    margin-bottom: 4.4063rem;
+}
+
+.contact-subtitle h1 {
+    margin-bottom: 1.2813rem;
+}
+
+.dotted-division {
+    border-top: .0625rem dashed #000000;
+}
+
+.contact-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #000000;
+    font-style: normal;
+    margin-bottom: 4.5rem;
+}
+
+.form-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 600;
+}
+
+form input {
+    width: 17.875rem;
+    height: 2.6875rem;
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.625rem;
+}
+
+form textarea {
+    width: 64.75rem;
+    height: 10.5rem;
+    display: block;
+    margin-top: 1.5rem;
+    resize: none;
+}
+
+.form-button {
+    width: 8.0625rem;
+    height: 2.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 600;
+    background-color: #ffffff;
+    margin-top: 2.75rem;
+    border: .0625rem solid #000000;
+}
+
+/* footer */
+
+footer {
+    background-color: #F5F5DC;
+    width: 100%;
+}
+
+footer p {
+    text-align: left;
+}
+
+.footer-pading {
+    padding: 0rem 12.5rem;
+}
