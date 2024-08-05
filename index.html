@@ -19,11 +19,25 @@
         <div>
             <img class="header-logo logo-shadow" src="https://i.ibb.co/kKHFs9t/logo-molino.png"  alt="logo-molino">
             <nav class="main-nav main-padding">
-                <ul>
+                <ul class="sm-hidden">
                     <li><a class="border-right-mainnav" href="#">INICIO </a></li>
                     <li><a class="border-right-mainnav" href="./pages/laempresa.html">LA EMPRESA</a></li>
                     <li><a class="border-right-mainnav" href="./pages/nuestraexcelencia.html">NUESTRA EXCELENCIA</a></li>
+                    <li><a class="md-border-right-mainnav" href="./pages/productos.html">PRODUCTOS</a></li>
+                    <li><a class="md-visible" href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>
+                <img class="sm-visible" src="./assets/img/menu.png" alt="burger-menu" onclick="toggleMenu()">
+            </nav>
+            <nav class="mobile-nav sm-visible main-padding">
+                <div>
+                    <img class="sm-visible" src="./assets/img/close.png" alt="cerrar" onclick="toggleMenu()">
+                </div>
+                <ul>
+                    <li><a href="#">INICIO </a></li>
+                    <li><a href="./pages/laempresa.html">LA EMPRESA</a></li>
+                    <li><a href="./pages/nuestraexcelencia.html">NUESTRA EXCELENCIA</a></li>
                     <li><a href="./pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,24 +69,33 @@
                 <button class="vermas-button"><a href="./pages/nuestraexcelencia.html#exportacion">VER MAS</a></button>
             </div>
         </section>
-        <hr class="margin-intersection" >
+        <div class="main-padding">
+            <hr class="margin-intersection" >
+        </div>
         <section class="main-padding">
-            <div class="homepage-product-text grid-products-inicio">
-                <img class="circle-image product-homepage-img-size" src="./assets/img/productos.pag1.jpg" alt="fideos-producto">
-                <h2 class="margin-bottom-titles">PRODUCTOS</h2>
-                <hr class="green-division shorter-division">
-                <p class="homepage-text">
-                    En nuestra empresa, nos enorgullecemos de ofrecer una amplia gama de opciones para satisfacer todos 
-                    los gustos y necesidades. Contamos con tres líneas de fideos y 12 variedades.
-                </p>
-                <button class="verproductos-button" ><a href="./pages/productos.html#productos">VER PRODUCTOS</a></button>
+            <div class="homepage-product-text flex-products-inicio">
+                <div>
+                    <img class="circle-image product-homepage-img-size" src="./assets/img/productos.pag1.jpg" alt="fideos-producto">
+                </div>
+                <div class="products-container">
+                    <h2 class="margin-bottom-titles">PRODUCTOS</h2>
+                    <hr class="green-division shorter-division">
+                    <p class="homepage-text">
+                        En nuestra empresa, nos enorgullecemos de ofrecer una amplia gama de opciones para satisfacer todos 
+                        los gustos y necesidades. Contamos con tres líneas de fideos y 12 variedades.
+                    </p>
+                    <button class="verproductos-button" ><a href="./pages/productos.html#productos">VER PRODUCTOS</a></button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-container main-padding">
             <div>
-                <p>
+                <p class="xs-visible big-copyright">
+                    ©
+                </p>
+                <p class="xs-hidden">
                     © 2024 The Pasta Company. Todos los derechos reservados.
                 </p>
             </div>
@@ -83,5 +106,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".mobile-nav").classList.toggle("opened");
+        }
+    </script>
 </body>
 </html>

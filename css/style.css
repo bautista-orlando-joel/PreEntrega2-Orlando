@@ -119,6 +119,51 @@ header .contact-nav {
     box-sizing: border-box;
 }
 
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F5F5DC;
+    background: rgba(245, 245, 220, 0.95);
+    transform: translateY(-100%);
+    transition: transform 500ms ease;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-bottom: .125rem solid #000000;
+}
+
+.mobile-nav div img{
+    height: 2rem;
+    width: 2rem;
+    background: none;
+    margin-top: 1.875rem;
+}
+
+.mobile-nav div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.mobile-nav.opened {
+    transform: translateY(0);
+}
+
 .main-nav {
     width: 100%;
     display: flex;
@@ -127,6 +172,12 @@ header .contact-nav {
     font-size: 1.25rem;
     font-weight: 600;
     box-sizing: border-box;
+}
+
+.main-nav img {
+    height: 2rem;
+    width: 2rem;
+    background: none;
 }
 
 .main-nav ul{
@@ -140,16 +191,13 @@ header .contact-nav {
     padding-bottom: 2rem;
 }
 
-.main-nav ul li:not(:last-child) a {
-    padding-right: 1.25rem;
-}
-
 .main-nav ul li a {
     padding-left: 1.25rem;
 }
 
 .border-right-mainnav {
     border-right: .125rem solid black;
+    padding-right: 1.25rem;
 }
 
 .header-shadow {
@@ -227,6 +275,7 @@ ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 1.25rem;
 }
 
 .card {
@@ -316,36 +365,31 @@ ul li a {
     margin-bottom: .9375rem;
 }
 
-.grid-products-inicio {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 6.25rem .625rem 6.25rem 6.25rem ;
-}
+.flex-products-inicio {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}   
 
-.grid-products-inicio img {
-    grid-column: 1/2;
-    grid-row: 1/5;
-    align-self: center;
-    margin-left: .625rem;
-}
-
-.grid-products-inicio h2 {
+.flex-products-inicio h2 {
     grid-column: 2/3;
     text-align: left;
     align-self: center;
     margin-bottom: 0;
 }
 
-.grid-products-inicio hr {
+.flex-products-inicio hr {
     grid-column: 2/3;
     grid-row: 2/3;
-    width: 25%;
+    width: 5rem;
     border: .0625rem solid #6B8E23;
     align-self: center;
     margin-left: 0px;
+    margin-top: 1.125rem;
+    margin-bottom: .5625rem;
 }
 
-.grid-products-inicio button {
+.flex-products-inicio button {
     grid-column: 2;
     grid-row: 4/5;
     align-self: center;
@@ -354,7 +398,7 @@ ul li a {
     margin-bottom: .9375rem ;
 }
 
-.grid-products-inicio p {
+.flex-products-inicio p {
     grid-column: 2/4;
     grid-row: 3/4;
     text-align: justify;
@@ -386,8 +430,7 @@ ul li a {
 .text-cols {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 1fr;
-    gap: 1.5rem;
+    gap: 1.9rem;
 }
 
 .text-cols p {
@@ -437,12 +480,9 @@ ul li a {
 
 /* nuestra excelencia */
 
-.provisional-size2 {
-    width: 31.875rem;
-    height: 18.125rem;
-    overflow: hidden;
-    object-fit: cover;
-    border: .0313rem solid #000000;
+.green-division {
+    border-top: .0625rem solid #6B8E23;
+    margin: 0;
 }
 
 .provisional-size3 {
@@ -462,8 +502,34 @@ ul li a {
 }
 
 .margin-nuestraexcelencia-divisions {
+    margin: auto;
     margin-top: 1.125rem;
     margin-bottom: 2.375rem;
+}
+
+.grid-calidad {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.grid-calidad p:last-child{
+    margin-bottom: 0;
+}
+
+.grid-calidad p:first-child{
+    margin: 0;
+}
+
+
+.grid-calidad .img-calidad1 {
+    width: 100%;
+    height: 18.125rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: .0313rem solid #000000;
 }
 
 .division-size1 {
@@ -495,10 +561,7 @@ ul li a {
 }
 
 
-.green-division {
-    border-top: .0625rem solid #6B8E23;
-    margin: 0;
-}
+
 
 .products-header {
     display: flex;
@@ -635,6 +698,7 @@ footer p {
     align-items: center;
     height: 5.625rem;
     border-top: .0625rem solid #000000;
+    gap: 1.875rem;
 }
 
 .socialmedia-container {
@@ -645,4 +709,121 @@ footer p {
 .socialmedia-container a img {
     width: 1.8rem;
     height: 1.8rem;
+}
+
+.md-visible, .sm-visible, .xs-visible {
+    display: none;
+}
+
+.big-copyright {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+@media (max-width: 1439px) {
+    /* … */
+    .header-logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-padding {
+        padding: 0 3.125rem;
+    }
+
+    .main-nav {
+        justify-content: center;
+        padding-top: 15.625rem;
+        padding-bottom: .9375rem;
+    }
+
+    .contact-nav ul li a{
+        display: none;
+    }
+
+    .md-border-right-mainnav {
+        border-right: .125rem solid black;
+        padding-right: 1.25rem;
+    }
+
+    .md-visible {
+        display: block;
+    }
+
+    .card-entire {
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+
+    .vermas-button {
+        margin-top: .3125rem;
+    }
+}
+
+@media (max-width: 1023px) { 
+    /* … */
+    .main-nav {
+        font-size: 1.125rem;
+        padding-bottom: 0;
+        padding-top: 15.3125rem;
+    }
+
+}
+
+@media (max-width: 929px) {
+    /* … */
+    .sm-hidden {
+        display: none;
+    }
+
+    .header-logo {
+        position: absolute;
+        top: 0px;
+        left: 12.5rem;
+    }
+
+    .main-nav {
+        padding-top: .9375rem;
+        padding-bottom: .9375rem;
+        justify-content: flex-end;
+    }
+
+    .sm-visible {
+        display: block;
+    }
+}
+
+@media (max-width: 812px) {
+    /* … */
+    .flex-products-inicio {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .flex-products-inicio .products-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 510px) {
+    /* … */
+    header div img {
+        height: 12rem;
+        width: 13.800rem;
+    }
+
+    .header-logo {
+        left: 10rem;
+    }
+
+    .xs-visible{
+        display: block;
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+
 }

@@ -19,11 +19,25 @@
         <div>
             <img class="header-logo logo-shadow" src="https://i.ibb.co/kKHFs9t/logo-molino.png"  alt="logo-molino">
             <nav class="main-nav main-padding">
-                <ul>
+                <ul class="sm-hidden">
                     <li><a class="border-right-mainnav" href="../index.html">INICIO </a></li>
                     <li><a class="border-right-mainnav" href="./laempresa.html">LA EMPRESA</a></li>
                     <li><a class="border-right-mainnav" href="#">NUESTRA EXCELENCIA</a></li>
+                    <li><a class="md-border-right-mainnav" href="./productos.html">PRODUCTOS</a></li>
+                    <li><a class="md-visible" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+                <img class="sm-visible" src="../assets/img/menu.png" alt="burger-menu" onclick="toggleMenu()">
+            </nav>
+            <nav class="mobile-nav sm-visible main-padding">
+                <div>
+                    <img class="sm-visible" src="../assets/img/close.png" alt="cerrar" onclick="toggleMenu()">
+                </div>
+                <ul>
+                    <li><a href="../index.html">INICIO </a></li>
+                    <li><a href="./laempresa.html">LA EMPRESA</a></li>
+                    <li><a href="#">NUESTRA EXCELENCIA</a></li>
                     <li><a href="./productos.html">PRODUCTOS</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,9 +54,9 @@
                         <h2 class="margin-bottom-titles center-text" id="calidad">CALIDAD</h2>
                         <hr class="green-division shorter-division margin-nuestraexcelencia-divisions">
                     </div>
-                    <div>
+                    <div class="grid-calidad">
                         <div>
-                            <p>
+                            <p class="texto-calidad1">
                                 En THE PASTA COMPANY, la calidad es nuestra prioridad principal. Seleccionamos cuidadosamente los mejores ingredientes y utilizamos tecnología avanzada junto con técnicas tradicionales para producir fideos secos excepcionales.
                                 <br><br><strong>Ingredientes Selectos</strong><br>
                                 Utilizamos trigo de la más alta calidad, garantizando pureza y frescura en cada lote de fideos.
@@ -56,9 +70,9 @@
                         </div>
                         <div>
                             <div>
-                                <img class="provisional-size2" src="../assets/img/calidad-pag3.jpg" alt="calidad-imagen1">
+                                <img class="img-calidad1" src="../assets/img/calidad-pag3.jpg" alt="calidad-imagen1">
                             </div>
-                            <p>
+                            <p class="texto-calidad2">
                                 <strong>Satisfacción del Cliente</strong><br>
                                 Escuchamos a nuestros clientes y nos adaptamos a sus necesidades, garantizando productos que enriquecen su experiencia culinaria.
                                 <br><br>En THE PASTA COMPANY, la calidad es una práctica diaria que guía todo lo que hacemos. Nos enorgullece producir fideos que combinan lo mejor de la tradición y la innovación, comprometidos siempre con la excelencia.
@@ -138,5 +152,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".mobile-nav").classList.toggle("opened");
+        }
+    </script>
 </body>
 </html>

@@ -17,16 +17,31 @@
             </nav>
         </div>
         <div>
-            <img class="header-logo logo-shadow" src="https://i.ibb.co/kKHFs9t/logo-molino.png"  alt="logo-molino" >
-            <nav class="main-nav main-padding">
-                <ul>
-                    <li><a class="border-right-mainnav" href="../index.html">INICIO </a></li>
-                    <li><a class="border-right-mainnav" href="./laempresa.html">LA EMPRESA</a></li>
-                    <li><a class="border-right-mainnav" href="./nuestraexcelencia.html">NUESTRA EXCELENCIA</a></li>
-                    <li><a href="#">PRODUCTOS</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div>
+                <img class="header-logo logo-shadow" src="https://i.ibb.co/kKHFs9t/logo-molino.png"  alt="logo-molino">
+                <nav class="main-nav main-padding">
+                    <ul class="sm-hidden">
+                        <li><a class="border-right-mainnav" href="../index.html">INICIO </a></li>
+                        <li><a class="border-right-mainnav" href="./laempresa.html">LA EMPRESA</a></li>
+                        <li><a class="border-right-mainnav" href="./nuestraexcelencia.html">NUESTRA EXCELENCIA</a></li>
+                        <li><a class="md-border-right-mainnav" href="#">PRODUCTOS</a></li>
+                        <li><a class="md-visible" href="./contacto.html">CONTACTO</a></li>
+                    </ul>
+                    <img class="sm-visible" src="../assets/img/menu.png" alt="burger-menu" onclick="toggleMenu()">
+                </nav>
+                <nav class="mobile-nav sm-visible main-padding">
+                    <div>
+                        <img class="sm-visible" src="../assets/img/close.png" alt="cerrar" onclick="toggleMenu()">
+                    </div>
+                    <ul>
+                        <li><a href="../index.html">INICIO </a></li>
+                        <li><a href="./laempresa.html">LA EMPRESA</a></li>
+                        <li><a href="./nuestraexcelencia.html">NUESTRA EXCELENCIA</a></li>
+                        <li><a href="#">PRODUCTOS</a></li>
+                        <li><a href="./contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
     <main class="main-padding padding-top padding-bot-productos">
         <section class="products-section">
@@ -161,5 +176,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".mobile-nav").classList.toggle("opened");
+        }
+    </script>
 </body>
 </html>
