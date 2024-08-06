@@ -125,7 +125,7 @@ header .contact-nav {
     top: 0;
     left: 0;
     background-color: #F5F5DC;
-    background: rgba(245, 245, 220, 0.95);
+    background: rgba(245, 245, 220);
     transform: translateY(-100%);
     transition: transform 500ms ease;
     padding: 0.5rem 0;
@@ -473,6 +473,7 @@ ul li a {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 1.5rem;
+    margin-top: 3.75rem;
 }
 
 .grid-values div p {
@@ -483,6 +484,10 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.margin-valores {
+    margin-bottom: .9375rem;
 }
 
 /* nuestra excelencia */
@@ -810,6 +815,27 @@ footer p {
         margin-bottom: .625rem;
     }
 
+    .margin-top-titles {
+        margin-top: 7rem;
+    }
+
+    .grid-values {
+        margin-bottom: 3.75rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    /* … */
+    .grid-values {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .values-img-size {
+        height: 12.375rem;
+        width: 12.375rem;
+    }
 }
 
 @media (max-width: 1023px) { 
@@ -847,6 +873,10 @@ footer p {
     .mobile-nav ul {
         font-size: 1.25rem;
     }
+
+    .margin-top-titles {
+        margin-top: 16rem;
+    }
 }
 
 @media (max-width: 812px) {
@@ -861,6 +891,32 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
+
+    .values-img-size {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .grid-values {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .text-cols {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-cols .img1 {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .text-cols .img2 {
+        width: 100%;
+        height: 25rem;
+    }
+
 }
 
 @media (max-width: 510px) {
@@ -874,6 +930,14 @@ footer p {
         left: 10rem;
     }
 
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.625rem;
+    }
+
     .xs-visible{
         display: block;
     }
@@ -885,6 +949,26 @@ footer p {
     .mobile-nav ul {
         font-size: 1.125rem;
     }
+
+    .values-img-size {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .margin-top-titles {
+        margin-top: 11rem;
+    }
+
+    .text-cols .img1 {
+        width: 100%;
+        height: 18rem;
+    }
+
+    .text-cols .img2 {
+        width: 100%;
+        height: 18rem;
+    }
+    
 }
 
 @media (max-width: 439px) {
@@ -892,6 +976,10 @@ footer p {
     header div img {
         height: 9rem;
         width: 10.800rem;
+    }
+
+    .margin-top-titles {
+        margin-top: 6.5rem;
     }
 
     .header-logo {
@@ -903,8 +991,16 @@ footer p {
         padding-right: 1.875rem;
     }
 
+    h1 {
+        font-size: 1.375rem;
+    }
+
     h2 {
         font-size: 1.25rem;
+    }
+
+    p {
+        font-size: .875rem;
     }
     
     .homepage-text {
@@ -948,4 +1044,28 @@ footer p {
         height: 1.75rem;
         width: 1.75rem;
     }
+
+    .shorter-division {
+        width: 2.75rem;
+    }
+
+    .xs-margin-intersection {
+        margin: 3rem 0rem 3.375rem 0rem;
+    }
+}
+
+@media (max-width: 406px) {
+    /* … */
+    .grid-values {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-top: 2.5rem;
+        margin-bottom: 3.25rem;
+    }
+
+    .values-img-size {
+        height: 12rem;
+        width: 12rem;
+    }
+
 }
