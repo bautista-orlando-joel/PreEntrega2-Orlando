@@ -593,7 +593,7 @@ ul li a {
 .grid-fideos {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .grid-fideos div {
@@ -666,7 +666,7 @@ ul li a {
 }
 
 form input {
-    width: 17.875rem;
+    width: 21.875rem;
     height: 2.6875rem;
     display: block;
     margin-top: 1.5rem;
@@ -674,7 +674,7 @@ form input {
 }
 
 form textarea {
-    width: 64.75rem;
+    width: 95%;
     height: 10.5rem;
     display: block;
     margin-top: 1.5rem;
@@ -711,7 +711,7 @@ footer p {
     align-items: center;
     height: 5.625rem;
     border-top: .0625rem solid #000000;
-    gap: 1.875rem;
+    gap: 2.8125rem;
 }
 
 .socialmedia-container {
@@ -739,6 +739,9 @@ footer p {
     margin-top: 1.25rem;
 }
 
+.md-navprodduct-visible {
+    display: none;
+}
 
 @media (max-width: 1439px) {
     /* … */
@@ -791,6 +794,21 @@ footer p {
         margin-bottom: 3.75rem;
     }
 
+    .margin-bottom-soperos {
+        margin-bottom: 7rem;
+    }
+
+    .contact-title {
+        margin-top: 7rem;
+    }
+
+    .form-text {
+        margin-bottom: 7rem;
+    }
+
+    .padding-bot-nuestraexcelencia {
+        padding-bottom: 6.875rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -804,6 +822,10 @@ footer p {
         height: 12.375rem;
         width: 12.375rem;
     }
+
+    .products-nav ul li {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1023px) { 
@@ -813,7 +835,24 @@ footer p {
         padding-bottom: 0;
         padding-top: 15.3125rem;
     }
+    
+    .md-navprodduct-visible {
+        display: flex;
+    }
 
+    .md-navprodduct-hidden {
+        display: none;
+    }
+
+    .products-nav ul {
+        gap: 3rem;
+    }
+
+    .products-img-size {
+        height: 13.625rem;
+        width: 13.625rem;
+    }
+    
 }
 
 @media (max-width: 929px) {
@@ -844,6 +883,10 @@ footer p {
 
     .margin-top-titles {
         margin-top: 16rem;
+    }
+
+    .grid-fideos {
+        gap: 1.5rem;
     }
 }
 
@@ -885,9 +928,56 @@ footer p {
         height: 25rem;
     }
 
+    .grid-fideos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .products-nav ul{
+        gap: 1.5rem;
+    }
+
+    form input {
+        width: 50%;
+    }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 620px) {
+    /* … */
+    .md-navprodduct-visible {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .products-nav ul{
+        padding-left: 0%;
+    }
+
+    .md-navprodduct-visible h1 {
+        margin-bottom: .625rem;
+    }
+
+    .line {
+        display: none;
+    }
+    
+    .box {
+        margin-right: 0%;
+    }
+
+    .flex-products {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    form input {
+        width: 95%;
+    }
+}
+
+@media (max-width: 511px) {
     /* … */
     header div img {
         height: 12rem;
@@ -937,6 +1027,17 @@ footer p {
         height: 18rem;
     }
     
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .products-nav ul li a {
+        font-size: 1rem;
+    }
+
+    .contact-paragraph {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 439px) {
@@ -947,7 +1048,7 @@ footer p {
     }
 
     .margin-top-titles {
-        margin-top: 6.5rem;
+        margin-top: 7.5rem;
     }
 
     .header-logo {
@@ -1020,6 +1121,34 @@ footer p {
     .xs-margin-intersection {
         margin: 3rem 0rem 3.375rem 0rem;
     }
+
+    .form-text {
+        font-size: 1.125rem;
+    }
+
+    .contact-title {
+        margin-top: 5.9375rem;
+    }
+
+    .contact-paragraph {
+        font-size: 17px;
+    }
+
+    .form-button {
+        font-size: 1.125rem;
+    }
+
+    .map-iframe {
+        height: 25.375rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+    
+    .products-section p {
+        font-size: .875rem;
+    }
 }
 
 @media (max-width: 406px) {
@@ -1036,4 +1165,24 @@ footer p {
         width: 12rem;
     }
 
+
+    .products-nav ul li a {
+        font-size: .875rem;
+    }
+
+
+    .padding-bot-nuestraexcelencia {
+        padding-bottom: 5.625rem;
+    }
+}
+
+@media (max-width: 348px) {
+    
+    h3 {
+        font-size: .875rem;
+    }
+
+    .margin-bottom-soperos {
+        margin-bottom: 5rem;
+    }
 }
