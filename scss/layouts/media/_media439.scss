@@ -1,0 +1,117 @@
+@media (max-width: 439px) {
+    /* general */
+    h1 {
+        font-size: 1.375rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .875rem;
+    }
+
+    .margin-top-titles {
+        margin-top: 7.5rem;
+    }
+
+    .main-padding {
+        padding-left:  1.875rem;
+        padding-right: 1.875rem;
+    }
+
+    .shorter-division {
+        width: 2.75rem;
+    }
+
+    /* header */
+    header div img {
+        height: 9rem;
+        width: 10.800rem;
+    }
+
+    .header-logo {
+        left: 7.25rem;
+    }
+
+    .mobile-nav {
+        ul {
+            font-size: .875rem;
+        }
+    
+        div img {
+            height: 1.75rem;
+            width: 1.75rem;
+        }
+    }
+
+    /* inicio */
+    .homepage-banner {
+        height: 25.375rem;
+    }
+
+    .homepage-text {
+        font-size: .875rem;
+    }
+
+    .vermas-button a {
+        font-size: .875rem;
+    }
+
+    .verproductos-button {
+        margin-top: .625rem;
+    
+        a {
+            font-size: .875rem;
+        }
+    }
+
+    .product-homepage-img-size {
+        width: 14.95rem;
+        height: 14.95rem;
+    }
+
+    .padding-bot-index {
+        padding-bottom: 3.625rem;
+    }
+
+    .card img {
+        height: 14.8125rem;
+    }
+
+    /* la empresa */
+    .xs-margin-intersection {
+        margin: 3rem 0rem 3.375rem 0rem;
+    }
+
+    /* productos */
+    .products-section p {
+        font-size: .875rem;
+    }
+
+    /* contacto */
+    .map-iframe {
+        height: 25.375rem;
+    }
+
+    .form-text {
+        font-size: 1.125rem;
+    }
+
+    .form-button {
+        font-size: 1.125rem;
+    }
+
+    .contact-title {
+        margin-top: 5.9375rem;
+    }
+
+    .contact-paragraph {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    /* la empresa */
+    .grid-values {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .values-img-size {
+        height: 12.375rem;
+        width: 12.375rem;
+    }
+
+    /* productos */
+    .products-nav ul li {
+        text-align: center;
+    }
+}

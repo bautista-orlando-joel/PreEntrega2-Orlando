@@ -1,0 +1,24 @@
+@media (max-width: 406px) {
+    /* la empresa */
+    .grid-values {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-top: 2.5rem;
+        margin-bottom: 3.25rem;
+    }
+
+    .values-img-size {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    /* nuestra excelencia */
+    .padding-bot-nuestraexcelencia {
+        padding-bottom: 5.625rem;
+    }
+
+    /* productos */
+    .products-nav ul li a {
+        font-size: .875rem;
+    }
+}

@@ -1,0 +1,72 @@
+@media (max-width: 1439px) {
+    /* general */
+    .main-padding {
+        padding: 0 3.125rem;
+    }
+
+    .md-visible {
+        display: block;
+    }
+
+    .margin-top-titles {
+        margin-top: 7rem;
+    }
+
+    /*header*/
+    .header-logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-nav {
+        justify-content: center;
+        padding-top: 15.625rem;
+        padding-bottom: .9375rem;
+    }
+
+    .nav-margin {
+        margin-bottom: .625rem;
+    }
+
+    .contact-nav ul li a{
+        display: none;
+    }
+
+    .md-border-right-mainnav {
+        border-right: .125rem solid black;
+        padding-right: 1.25rem;
+    }
+
+    /* inicio */
+    .card-entire {
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+
+    .vermas-button {
+        margin-top: .3125rem;
+    }
+
+    /* la empresa */
+    .grid-values {
+        margin-bottom: 3.75rem;
+    }
+
+    .margin-bottom-soperos {
+        margin-bottom: 7rem;
+    }
+
+    /*nuestra excelencia*/
+    .padding-bot-nuestraexcelencia {
+        padding-bottom: 6.2rem;
+    }    
+
+    /* contacto */
+    .contact-title {
+        margin-top: 7rem;
+    }
+
+    .form-text {
+        margin-bottom: 7rem;
+    }
+}

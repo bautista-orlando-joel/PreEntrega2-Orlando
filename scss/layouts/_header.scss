@@ -1,0 +1,137 @@
+/* HEADER */
+
+header {
+    background-color: map-get($colorsPalette, beige );
+    width: 100%;
+    border-bottom: .0625rem solid map-get($colorsPalette, negro );
+
+    div img {
+        background-color: map-get($colorsPalette, blanco );
+        width: 17.8125rem;
+        height: 16.125rem;
+        overflow: hidden;
+        object-fit: cover;
+        padding: .3125rem;
+    }
+}
+
+.contact-nav {
+    background-color: map-get($colorsPalette, negro );
+    width: 100%;
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    box-sizing: border-box;
+
+    ul {
+        list-style: circle;
+        margin: 0rem;
+
+        li {
+            padding: .9375rem 0;
+
+            a {
+                color: map-get($colorsPalette, blanco );
+            }
+        }
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: map-get($colorsPalette, beige );
+    background: map-get($colorsPalette, beige);
+    transform: translateY(-100%);
+    transition: transform 500ms ease;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-bottom: .125rem solid map-get($colorsPalette, negro );
+
+    div {
+        img {
+            height: 2rem;
+            width: 2rem;
+            background: none;
+            margin-top: 1.875rem;
+        }
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5625rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        padding: 0;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &.opened {
+        transform: translateY(0);
+    }
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-sizing: border-box;
+
+    img {
+        height: 2rem;
+        width: 2rem;
+        background: none;
+    }
+
+    ul {
+        width: fit-content;
+        padding: 0;
+    
+        li {
+            padding: 0;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+    
+            a {
+                padding-left: 1.25rem;
+            }
+        }
+    }
+}
+
+.border-right-mainnav {
+    border-right: .125rem solid map-get($colorsPalette, negro );
+    padding-right: 1.25rem;
+}
+
+.header-shadow {
+    box-shadow: 0 .125rem .625rem map-get($colorsPalette, negro);
+}
+
+.logo-shadow {
+    box-shadow: 0 .125rem .625rem map-get($colorsPalette, negro);
+}
+
+.header-logo {
+    position: absolute;
+    top: 0px;
+    left: 10rem;
+}
+
+.nav-margin {
+    margin-bottom: 1.5625rem;
+}

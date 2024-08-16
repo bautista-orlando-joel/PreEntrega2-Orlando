@@ -1,0 +1,63 @@
+@media (max-width: 511px) {
+    /* general */
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.625rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .xs-visible{
+        display: block;
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+
+    .margin-top-titles {
+        margin-top: 11rem;
+    }
+
+    /* header */
+    header div img {
+        height: 12rem;
+        width: 13.800rem;
+    }
+
+    .header-logo {
+        left: 10rem;
+    }
+
+    .mobile-nav ul {
+        font-size: 1.125rem;
+    }
+
+    /* la empresa */
+    .values-img-size {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .text-cols {
+        .img1, .img2 {
+            width: 100%;
+            height: 18rem;
+        }
+    }
+
+    /* productos */
+    .products-nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* contacto */
+    .contact-paragraph {
+        font-size: 1.25rem;
+    }
+}

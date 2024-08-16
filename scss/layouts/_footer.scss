@@ -1,0 +1,34 @@
+/* FOOTER */
+
+footer {
+    background-color: map-get($colorsPalette, beige );
+    width: 100%;
+
+    p {
+        text-align: left;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.625rem;
+    border-top: .0625rem solid map-get($colorsPalette, negro);
+    gap: 2.8125rem;
+}
+
+.socialmedia-container {
+    display: flex;
+    gap: .625rem;
+
+    a img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+.big-copyright {
+    font-size: 2.5rem;
+    margin: 0;
+}

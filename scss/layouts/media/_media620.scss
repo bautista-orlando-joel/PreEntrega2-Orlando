@@ -1,0 +1,33 @@
+@media (max-width: 620px) {
+    /* productos */
+    .md-navprodduct-visible {
+        flex-direction: column;
+        align-items: center;
+    
+        h1 {
+            margin-bottom: .625rem;
+        }
+    }
+
+    .products-nav ul{
+        padding-left: 0%;
+    }
+
+    .line {
+        display: none;
+    }
+    
+    .box {
+        margin-right: 0%;
+    }
+
+    .flex-products {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    /*contacto*/
+    form input {
+        width: 95%;
+    }
+}

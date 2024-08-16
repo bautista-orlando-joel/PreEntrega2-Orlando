@@ -1,0 +1,36 @@
+@media (max-width: 929px) {
+    /* general */
+    .sm-hidden {
+        display: none;
+    }
+
+    .sm-visible {
+        display: block;
+    }
+
+    .margin-top-titles {
+        margin-top: 16rem;
+    }
+
+    /* header */
+    .header-logo {
+        position: absolute;
+        top: 0px;
+        left: 12.5rem;
+    }
+
+    .main-nav {
+        padding-top: .9375rem;
+        padding-bottom: .9375rem;
+        justify-content: flex-end;
+    }
+
+    .mobile-nav ul {
+        font-size: 1.25rem;
+    }
+
+    /* productos */
+    .grid-fideos {
+        gap: 1.5rem;
+    }
+}
