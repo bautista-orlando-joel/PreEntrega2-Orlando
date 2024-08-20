@@ -15,8 +15,7 @@
 }
 
 .flex-products {
-    display: flex;
-    align-items: center;
+    @include flex (none, row, none, center, none);
     margin-bottom: 5rem;
 }
 
@@ -35,17 +34,15 @@
 }
 
 .products-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (none, row, space-between, center, none);
 }
 
 .products-nav ul {
-    display: flex;
-    gap: 1.25rem;
+    @include flex (none, row, none, none, 1.25rem);
 
     li {
         padding: 1.25rem 0;
+        text-align: center; 
 
         a {
             font-family: "Roboto", sans-serif;
@@ -84,9 +81,7 @@
     gap: 3rem;
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (none, column, none, center, none);
 
         p {
             text-align: center;

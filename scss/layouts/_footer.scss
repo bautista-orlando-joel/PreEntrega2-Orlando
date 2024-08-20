@@ -10,12 +10,9 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (none, row, space-between, center, 2.8125rem);
     height: 5.625rem;
     border-top: .0625rem solid map-get($colorsPalette, negro);
-    gap: 2.8125rem;
 }
 
 .socialmedia-container {

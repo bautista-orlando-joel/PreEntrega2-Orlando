@@ -14,17 +14,12 @@
 }
 
 .card-entire {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.25rem;
+    @include flex (wrap, row, space-between, center, 1.25);
 }
 
 .card {
     width: 21.5625rem;
-    display: flex;
-    flex-direction: column;
+    @include flex (wrap, column, none, none, none);
 
     h2 {
         text-align: center;
@@ -43,6 +38,12 @@
     p {
         text-align: center;
     }
+}
+
+.medium-division {
+    width: 7.5rem;
+    margin: auto;
+    margin-top: 1.25rem;
 }
 
 .product-homepage-img-size {
@@ -104,39 +105,26 @@
 }
 
 .flex-products-inicio {
-    display: flex;
-    align-items: center;
-    gap: 80px;
+    @include flex (none, row, none, center, 5rem);
 
     h2 {
-        grid-column: 2/3;
         text-align: left;
-        align-self: center;
         margin-bottom: 0;
     }
 
     hr {
-        grid-column: 2/3;
-        grid-row: 2/3;
         width: 5rem;
-        align-self: center;
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 1.125rem;
         margin-bottom: .5625rem;
     }
 
     button {
-        grid-column: 2;
-        grid-row: 4/5;
-        align-self: center;
-        justify-self: left;
         padding: .625rem .8125rem;
         margin-bottom: 0.9375rem;
     }
 
     p {
-        grid-column: 2/4;
-        grid-row: 3/4;
         text-align: justify;
     }
 }

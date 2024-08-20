@@ -16,9 +16,7 @@
             width: 9.375rem;
         }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (none, column, none, center, none);
     }
 }
 
